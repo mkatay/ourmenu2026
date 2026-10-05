@@ -10,7 +10,7 @@ export const TimeSpent = () => {
         return ()=>clearTimeout(timer)
     },[timeSpent])
   return (
-    <div >
+    <div className='absolute right-4 top-4 font-normal text-xs border border-amber-600 p-2 rounded-full'>
       {timeSpent}s
     </div>
   )
