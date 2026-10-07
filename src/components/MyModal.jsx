@@ -6,7 +6,8 @@ export const MyModal = ({isOpen,setIsOpen,selectedFood}) => {
     <div>
         <Modal.Backdrop isOpen={isOpen} onOpenChange={setIsOpen}>
           <Modal.Container placement="center">
-            <Modal.Dialog className="max-h-[80vh] w-[80vw] max-w-none">
+            <Modal.Dialog className="max-h-[80vh] w-[80vw] max-w-none
+            ">
               <Modal.CloseTrigger />
               <Modal.Header>
                 <Modal.Heading className='uppercase text-center font-bold'>{selectedFood.title}</Modal.Heading>
@@ -21,4 +22,6 @@ export const MyModal = ({isOpen,setIsOpen,selectedFood}) => {
     </div>
   )
 }
+
+
 
